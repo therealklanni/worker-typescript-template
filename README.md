@@ -1,4 +1,4 @@
-# ʕ •́؈•̀) `workers-typescript-template`
+# ʕ •́؈•̀) `worker-typescript-template`
 
 A batteries included template for kick starting a TypeScript Cloudflare worker project.
 
@@ -9,7 +9,7 @@ This template is meant to be used with [Wrangler](https://github.com/cloudflare/
 To generate using Wrangler, run this command:
 
 ```bash
-wrangler generate my-ts-project https://github.com/EverlastingBugstopper/worker-typescript-template
+wrangler generate my-ts-project https://github.com/therealklanni/worker-typescript-template
 ```
 
 ### 👩 💻 Developing
@@ -19,10 +19,6 @@ wrangler generate my-ts-project https://github.com/EverlastingBugstopper/worker-
 ### 🧪 Testing
 
 This template comes with mocha tests which simply test that the request handler can handle each request method. `npm test` will run your tests.
-
-### ✏️ Formatting
-
-This template uses [`prettier`](https://prettier.io/) to format the project. To invoke, run `npm run format`.
 
 ### 👀 Previewing and Publishing
 
