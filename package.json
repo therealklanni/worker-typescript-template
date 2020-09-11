@@ -8,9 +8,18 @@
   "scripts": {
     "build": "webpack",
     "dev": "NODE_ENV=development npm run build",
-    "format": "prettier --write '**/*.{ts,js,css,json,md}'",
+    "format": "pretty-quick --staged --verbose --pattern '**/*.{json,md,y{a}ml}'",
     "test": "jest",
     "transpile": "tsc --project ./test"
+  },
+  "husky": {
+    "pre-commit": "npm run format && lint-staged",
+    "pre-push": "npm test"
+  },
+  "lint-staged": {
+    "*.[tj]s": [
+      "eslint --fix"
+    ]
   },
   "eslintConfig": {
     "parser": "@typescript-eslint/parser",
@@ -21,7 +30,9 @@
       "@therealklanni/eslint-config/jest",
       "@therealklanni/eslint-config/node"
     ],
-    "ignorePatterns": ["dist/**/*"],
+    "ignorePatterns": [
+      "dist/**/*"
+    ],
     "overrides": [
       {
         "files": "**/*.js",
@@ -56,8 +67,11 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^24.0.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
     "jest": "^26.4.2",
+    "lint-staged": "^10.3.0",
     "prettier": "^1.19.1",
+    "pretty-quick": "^3.0.2",
     "service-worker-mock": "^2.0.5",
     "ts-jest": "^26.3.0",
     "ts-loader": "^7.0.5",
