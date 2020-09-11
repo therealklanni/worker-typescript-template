@@ -9,8 +9,7 @@
     "build": "webpack",
     "build:dev": "NODE_ENV=development npm run build",
     "format": "pretty-quick --staged --verbose --pattern '**/*.{json,md,y{a}ml}'",
-    "test": "jest",
-    "transpile": "tsc --project ./test"
+    "test": "jest"
   },
   "husky": {
     "pre-commit": "npm run format && lint-staged",
