@@ -1,6 +1,6 @@
 {
   "name": "worker-typescript-template",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "CloudFlare Worker TypeScript template",
   "author": "therealklanni",
   "license": "MIT OR Apache-2.0",
