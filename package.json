@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "NODE_ENV=development npm run build",
+    "build:dev": "NODE_ENV=development npm run build",
     "format": "pretty-quick --staged --verbose --pattern '**/*.{json,md,y{a}ml}'",
     "test": "jest",
     "transpile": "tsc --project ./test"
