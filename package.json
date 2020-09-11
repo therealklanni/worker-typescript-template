@@ -21,6 +21,7 @@
       "@therealklanni/eslint-config/jest",
       "@therealklanni/eslint-config/node"
     ],
+    "ignorePatterns": ["dist/**/*"],
     "overrides": [
       {
         "files": "**/*.js",
