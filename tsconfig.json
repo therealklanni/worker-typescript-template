@@ -13,7 +13,8 @@
     "types": ["jest", "@cloudflare/workers-types"]
   },
   "include": [
-    "./**/*.ts",
+    "**/*.ts",
+    "**/*.js",
     "./node_modules/@cloudflare/workers-types/index.d.ts"
   ],
   "exclude": ["node_modules/", "dist/"]

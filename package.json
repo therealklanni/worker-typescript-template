@@ -19,8 +19,27 @@
     },
     "extends": [
       "@therealklanni/eslint-config/jest",
-      "@therealklanni/eslint-config/node",
-      "@therealklanni/eslint-config/prettier-typescript"
+      "@therealklanni/eslint-config/node"
+    ],
+    "overrides": [
+      {
+        "files": "**/*.js",
+        "extends": [
+          "@therealklanni/eslint-config/prettier"
+        ]
+      },
+      {
+        "files": "**/*.ts",
+        "extends": [
+          "@therealklanni/eslint-config/prettier-typescript"
+        ]
+      },
+      {
+        "files": "webpack.config.js",
+        "rules": {
+          "no-process-env": "off"
+        }
+      }
     ]
   },
   "prettier": "@therealklanni/prettier-config",
